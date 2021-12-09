@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical" android:paddingLeft="10dp"
+    android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ACTIVIDAD ANFITRION A"
+        android:textColor="#9F0909"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnActividad2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="abrir"
+        android:text="Abrir Actividad B" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorF1"
+        android:name="co.gov.mintic.misiontic.ciclo4.usa.fragmentos.FragmentoContadorClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/layout_fragmento_contador_click" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/contenedorF2"
+        android:name="co.gov.mintic.misiontic.ciclo4.usa.fragmentos.FragmentoContadorClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/layout_fragmento_contador_click" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="co.gov.mintic.misiontic.ciclo4.usa.fragmentos.FragmentoContadorClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/layout_fragmento_contador_click" />
+
+</LinearLayout>
